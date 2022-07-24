@@ -8,7 +8,6 @@ function nextImage() {
     currentImageIndex++
     if(currentImageIndex >= max) {
         currentImageIndex = 0
-        console.log("imagem 0 novamente")
     }
     images[currentImageIndex].classList.add("selected")
 }
@@ -19,4 +18,4 @@ function start() {
     }, time)
 }
 
-window.addEventListener("load", start)
+window.addEventListener("load", start);
